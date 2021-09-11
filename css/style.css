@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both
+}
+
+span {
+    display: inline-block
+}
+
+/* =============== Common CSS End ============== */
+
+/* ================ Menu part Start ================= */
+#menu_part {
+    height: 110px;
+    background: rgba(0, 0, 0, 0.164);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_logo {
+    width: 250px;
+    line-height: 110px;
+}
+
+.main_menu {
+    width: 1000px;
+    line-height: 110px;
+}
+
+.main_menu ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.main_menu ul li a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
+    position: relative;
+    padding: 0 27px;
+    display: block;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.main_menu ul li a:hover {
+    color: #92e97a;
+}
+
+.cool_link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #c7c5bc;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+
+}
+
+.cool_link:hover::after {
+    width: 100%;
+
+}
+
+/* ================ Menu part End ================= */
+
+/* ================ Banner part Start ================= */
+#banner_part {
+    padding: 238px 0 143px;
+    background: url(../images/banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.banner_text {
+    text-align: center;
+}
+
+.banner_text h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    color: #fff;
+    width: 959px;
+    margin-left: 194px;
+}
+
+.banner_text img {
+    display: block;
+    margin: 12px 0 40px 557px;
+}
+
+.banner_text a {
+    width: 171px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 50px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-right: 20px;
+
+}
+
+.banner_text a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #fff;
+}
+
+.banner_tag {
+    margin-left: 111px;
+}
+
+/* ================ Banner part End ================= */
+
+/* ================ Signaure part Start ================= */
+#sig_part {
+    padding: 77px 0;
+    background: url(../images/pattern.jpg) center no-repeat;
+    background-size: cover;
+
+}
+
+.sig_cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sig_text {
+    width: 550px;
+    margin-left: 119px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.sig_dish {
+    width: 530px;
+}
+
+.sig_text h2 {
+    color: #cc9900;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+
+}
+
+.sig_text p {
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 27px 0 37px 75px;
+    width: 442px;
+}
+
+.sig_dish img {
+    width: 100%;
+    max-width: 100%;
+    transition: all linear 20s;
+    -webkit-transition: all linear 20s;
+    -moz-transition: all linear 20s;
+    -ms-transition: all linear 20s;
+    -o-transition: all linear 20s;
+}
+
+#sig_part:hover .sig_dish img {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+/* ================ Signaure part End ================= */
+
+/* ================ Mosla part Start ================= */
+#mosla_part {
+    padding: 99px 0;
+    background: url(../images/bg-3.jpg) center no-repeat;
+    background-size: cover;
+
+}
+
+.mosla_col {
+    width: 566px;
+    padding: 80px 50px 50px;
+    background: rgba(0, 0, 0, 0.701);
+    text-align: center;
+    border-radius: 7px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.mosla_col h2 span {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.mosla_col span:nth-child(1) {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+
+}
+
+#mosla_part:hover .mosla_col span:nth-child(1) {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+
+}
+
+.mosla_col span:nth-child(2) {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+#mosla_part:hover .mosla_col span:nth-child(2) {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+
+}
+
+.mosla_col img {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.mosla_col p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 442px;
+
+}
+
+.mosla_img img {
+    margin-top: 40px;
+}
+
+/* ================ Mosla part End ================= */
+
+/* ================ Review part Start ================= */
+#review_part {
+    padding: 100px 0;
+    background: url(../images/guest-banner.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overly {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: rgba(76, 146, 87, 0.3);
+    opacity: 0;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#review_part:hover .overly {
+    opacity: 1;
+    height: 100%;
+}
+
+.review_cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review_test {
+    width: 771px;
+    padding: 100px 30px;
+    background: rgba(0, 0, 0, 0.906);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.review_test h2 span {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    position: absolute;
+    top: 57px;
+    left: -7px;
+    width: 100%;
+    height: 100%;
+}
+
+.review_test h2 span:nth-child(1) {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all linear 0.6s;
+    -webkit-transition: all linear 0.6s;
+    -moz-transition: all linear 0.6s;
+    -ms-transition: all linear 0.6s;
+    -o-transition: all linear 0.6s;
+}
+
+#review_part:hover .review_test h2 span:nth-child(1) {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+
+}
+
+.review_test h2 span:nth-child(2) {
+    transform: translateX(0);
+    transition: all linear 0.6s;
+    -webkit-transition: all linear 0.6s;
+    -moz-transition: all linear 0.6s;
+    -ms-transition: all linear 0.6s;
+    -o-transition: all linear 0.6s;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+#review_part:hover .review_test h2 span:nth-child(2) {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+
+.review_test p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 45px;
+    font-family: 'Gentium Book Basic', serif;
+    width: 617px;
+    margin-top: 36px;
+    margin-left: 40px;
+    position: relative;
+
+}
+
+.review_test p span {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 26px;
+
+}
+
+.review_test p i {
+    color: #cc9900;
+    position: absolute;
+    top: -4px;
+    left: -28px;
+}
+
+/* ================ Review part End ================= */
+
+/* ================ Food Item part Start ================= */
+#food_part {
+    padding: 77px 0;
+    background: url(../images/pattern.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.food_cont {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.food_img {
+    width: 625px;
+}
+
+.food_img img {
+    margin-right: 15px;
+}
+
+.food_corner {
+    width: 625px;
+    margin-top: 40px;
+}
+
+.food_text {
+    text-align: center;
+    margin-right: 217px;
+    position: relative;
+
+}
+
+.food_text h2 span {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    color: #cc9900;
+    width: 100%;
+    height: 100%;
+}
+
+.food_text img {
+    margin-bottom: 30px;
+}
+
+.food_text p {
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    width: 415px;
+    margin-bottom: 46px;
+}
+
+.food_text p span {
+    margin-top: 15px;
+}
+
+.form_row {
+    width: 33%;
+    display: inline-block;
+    margin-bottom: 27px;
+}
+
+.form_row input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 10px;
+}
+
+.form_row h2 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #cc9900;
+}
+
+.form_row ::placeholder {
+    color: #7c7c7c;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+
+}
+
+.form_row select {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 10px;
+
+}
+
+.form_row .party {
+    color: #7c7c7c;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+
+}
+
+.form_row:nth-child(5) {
+    margin-left: 112px;
+
+}
+
+/* ================ Food Item part End ================= */
+
+/* ================ Footer part Start ================= */
+#footer_part {
+    padding: 94px 0;
+    background: #191919;
+}
+
+.footer_cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.footer_col {
+    width: 27%;
+    margin-left: 75px;
+    text-align: center;
+}
+
+.footer_col:nth-child(3) {
+    margin-right: 0;
+
+}
+
+.footer_text {
+    width: 200px;
+    text-align: center;
+
+}
+
+.footer_title h2 {
+    color: #fefefe;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 10px;
+}
+
+.footer_text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    width: 345px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.footer_col:nth-child(2) p,
+.footer_col:nth-child(3) p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    width: 218px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 69px;
+}
+
+.footer_col:nth-child(2) p span,
+.footer_col:nth-child(3) p span {
+    margin-top: 50px;
+
+}
+
+.footer_col:nth-child(2) p span i,
+.footer_col:nth-child(3) p span i {
+    padding-right: 5px;
+}
+
+/* ================ Footer part End ================= */
+
+/* ================ Menu part Start ================= */
+
+/* ================ Menu part End ================= */
